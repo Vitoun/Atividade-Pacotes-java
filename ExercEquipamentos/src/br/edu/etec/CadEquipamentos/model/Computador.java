@@ -8,6 +8,26 @@ package br.edu.etec.CadEquipamentos.model;
  *
  * @author Admin
  */
-public class Computador {
+public class Computador extends Equipamento{
     
-}
+    
+    
+    public String getProcessador(){
+        return processador;
+    }
+    
+    public void setProcessador(String processador){
+        this.processador = processador;
+    }
+    
+    private String processador;
+    
+    public Computador (String nome, String modelo, String processador){
+            super(nome, modelo);
+            this.processador = processador;
+    }
+     
+        
+    }
+    
+
